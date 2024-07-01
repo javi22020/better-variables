@@ -8,6 +8,7 @@ class BetterVariable:
         self.description = description
     def __str__(self) -> str:
         return f"""Variable name: {get_variable_name(self)}
+Variable type: {type(self.value)}
 Variable value: {self.value}
 Variable description: {self.description}
 """
